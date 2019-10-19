@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+
+<h1>Simulado-IFRS</h1>
+
+<div>
+    <div id="perguntas"></div>
+</div>
+    <button onclick="entregar()">entregar</button>
+<script src= "jquery.min.js"></script> 
+<script>
+    var perguntas = 0;
+function myFunction() {
+
+
+  $.getJSON('perguntas/matematica/1.json', function(data) {
+    
+    for (i = 0; i < 2; i++) {
+
+      document.getElementById("perguntas").innerHTML += "<form>";
+      document.getElementById("perguntas").innerHTML += data.perguntas[i].pergunta+"<br>";
+
+      document.getElementById("perguntas").innerHTML += "<input type=\"radio\" name=\""+data.perguntas[i].ID+"\" id=\"1\">" +data.perguntas[i].A+"<br>";
+      document.getElementById("perguntas").innerHTML += "<input type=\"radio\" name=\""+data.perguntas[i].ID+"\" id=\"2\">" +data.perguntas[i].B+"<br>";
+      document.getElementById("perguntas").innerHTML += "<input type=\"radio\" name=\""+data.perguntas[i].ID+"\" id=\"3\">" +data.perguntas[i].C+"<br>";
+      document.getElementById("perguntas").innerHTML += "<input type=\"radio\" name=\""+data.perguntas[i].ID+"\" id=\"4\">" +data.perguntas[i].D+"<br>";
+      document.getElementById("perguntas").innerHTML += "<input type=\"radio\" name=\""+data.perguntas[i].ID+"\" id=\"5\">" +data.perguntas[i].E+"<br>";
+      document.getElementById("perguntas").innerHTML += "</form>";
+
+
+    }
+                console.log(data);
+                
+
+                
+
+			}); 
+}
+function entregar(){
+    console.log("a");
+    var pergunta = document.forms[0];
+  var i;
+  for (i = 0; i < pergunta.length; i++) {
+    console.log(pergunta[i].value+"a");
+    if (pergunta[i].checked) {
+        console.log(pergunta[i].value+"a");
+    }
+  }
+ 
+}
+</script>
+
+</body>
+</html>
