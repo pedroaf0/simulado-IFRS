@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
+  <header>
+    <title id="title">Simulado-IFRS</title>
+    <link rel="stylesheet" href="style.css">
+  </header>
 <body onload="myFunction()">
 
-<h1>Simulado-IFRS</h1>
 
-<div>
-    <div id="perguntas"></div>
+
+<div style="align-items: center;">
+    <div id="perguntas" class="perguntas" >
+      <h1>Simulado-IFRS</h1>
+    
+    </div>
+    <div class="perguntas">
+        <button onclick="entregar()">entregar</button>
+    </div>
 </div>
-    <button onclick="entregar()">entregar</button>
+    
 <span id="rr"></span>
 
 <script src= "jquery.min.js"></script> 
@@ -22,7 +32,7 @@ function myFunction() {
 
   $.getJSON('perguntas/matematica/1.json', function(data) {
     
-    for (i = 0; i < 2; i++) {
+    for (i = 0; i < 6; i++) {
       document.getElementById("perguntas").innerHTML += "<div id=\""+i+"\">";
 
       document.getElementById("perguntas").innerHTML += data.perguntas[i].pergunta+"<br>";

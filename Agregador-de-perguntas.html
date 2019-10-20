@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <header>
+
+
+  </header>
+
+  <body>
+        <textarea id="Text1" cols="40" rows="5"></textarea><br>
+        resultado:<button onclick="transformar();">transformar</button><button onclick="mais();">+</button><br>
+        <textarea id="Text2" cols="50" rows="50"></textarea><br>
+
+  </body>
+  <script>
+      function transformar() {
+          
+      txt = document.getElementById("Text1").value;
+      txt.replace(/\n/g, '');
+      
+      Arraytxt = txt.split("(");
+      console.log(Arraytxt);
+      document.getElementById("Text2").value +=  "{";
+        document.getElementById("Text2").value += "\"pergunta\": \""+Arraytxt[0].replace(/\n/g, '')+"\",";
+        document.getElementById("Text2").value += "\"A\": \"("+Arraytxt[1]+"\",";
+        document.getElementById("Text2").value += "\"B\": \"("+Arraytxt[2]+"\",";
+        document.getElementById("Text2").value += "\"C\": \"("+Arraytxt[3]+"\",";
+        document.getElementById("Text2").value += "\"D\": \"("+Arraytxt[4]+"\",";
+        document.getElementById("Text2").value += "\"E\": \"("+Arraytxt[5].replace(/\n/g, '')+"\"";
+        document.getElementById("Text2").value += "}";
+      }
+      function mais(){
+        document.getElementById("Text1").value = ""; 
+        document.getElementById("Text2").value += ","; 
+      }
+  </script>
+</html>

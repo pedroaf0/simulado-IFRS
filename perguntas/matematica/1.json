@@ -1,26 +1,36 @@
-
 {
   "perguntas": [
     {
       "pergunta": "Existe uma história que, um dia, uma moça entrou em uma igreja e prometeu contribuir com 12 reais para os pobres se a Santa X duplicasse o dinheiro que ela tinha no bolso. O milagre aconteceu, e a moça colocou os 12 reais na caixa de esmolas. Gostou tanto que prometeu dar mais 12 reais se a santa, outra vez, duplicasse o dinheiro que tinha no bolso. Novamente, o milagre aconteceu, mas quando a moça colocou os 12 reais na caixa de esmolas, percebeu que ficara sem dinheiro algum. Com quanto dinheiro, em reais, a moça entrou na igreja? ",
-      "ID": "01",
-      "A": "6",
-      "B": "8",
-      "C": "9",
-      "D": "12",
-      "E": "24",
-      "CERTA": "A"
+      "A": "(A) 6 ",
+      "B": "(B) 8 ",
+      "C": "(C) 9 ",
+      "D": "(D) 12 ",
+      "E": "(E) 24 "
     },
     {
-      "pergunta": "Uma moça pede ao seu pai 100 reais emprestados e promete pagar 110 reais após 30 dias. Ela gastou uma parte do dinheiro e restaram 85 reais. Renegocia com seu pai o saldo da dívida com juros. Seu pai aceita, desde que pague mais 1/5 do valor que ainda falta em trinta dias. Qual o percentual que a moça pagou de juros pelo empréstimo?  ",
-      "ID": "02",
-      "A": "10",
-      "B": "15",
-      "C": "20",
-      "D": "25",
-      "E": "30",
-      "CERTA": "A"
+      "pergunta": "Uqma moça pede ao seu pai 100 reais emprestados e promete pagar 110 reais após 30 dias. Ela gastou uma parte do dinheiro e restaram 85 reais. Renegocia com seu pai o saldo da dívida com juros. Seu pai aceita, desde que pague mais 1/5 do valor que ainda falta em trinta dias. Qual o percentual que a moça pagou de juros pelo empréstimo? ",
+      "A": "(A) 10 ",
+      "B": "(B) 15 ",
+      "C": "(C) 20 ",
+      "D": "(D) 25 ",
+      "E": "(E) 30 "
+    },
+    {
+      "pergunta": "Um campeonato de xadrez oferece 3700 dólares aos três primeiros premiados. O segundo premiado ganha 40% a mais que o terceiro. O terceiro colocado ganha somente 1/5 do primeiro. Qual é o prêmio do terceiro, em dólares? ",
+      "A": "(A) 500 ",
+      "B": "(B) 700 ",
+      "C": "(C) 900 ",
+      "D": "(D) 1500 ",
+      "E": "(E) 2500 "
+    },
+    {
+      "pergunta": "Tenho um relógio estranho ou maluco na minha sala de aula, pois em 3 minutos reais ele marca 5 minutos. Eu disse para a professora que, pelo relógio da sala de aula, estudei 1 hora e 5 minutos. Na verdade, quanto tempo eu estudei, em minutos? ",
+      "A": "(A) 15 ",
+      "B": "(B) 18 ",
+      "C": "(C) 27 ",
+      "D": "(D) 30 ",
+      "E": "(E) 39 "
     }
   ]
 }
-
