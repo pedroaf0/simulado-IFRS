@@ -1,0 +1,40 @@
+div#index {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    /* altura necessária */
+    height: 248px;
+    width: 25%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+  }
+  img{
+    width: 50%;
+
+}
+
+  body {
+    background-color: rgb(255, 255, 255);
+    
+  }
+  @media only screen and (max-width: 600px) {
+    div#index {
+     
+        height: 100%;
+        background: rgb(255, 255, 255);
+        padding: 0%;
+        border:none;
+
+    
+      }
+      img{
+          width: auto;
+
+      }
+  }
