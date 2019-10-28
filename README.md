@@ -2,26 +2,27 @@
 o objetivo desse repositório é criar uma plataforma online que permita ao usuário fazer um simulado da prova do processo seletivo do IFRS. Utilizando uma pagina 100% estática (que não precise de processamento por parte do servidor) as perguntas são armazenadas em arquivos json
 - [x] criar a base da aplicação html
 - [x] add meta tags com imagem, descrição e titulo
+- [ ] criar animação de load com o logo do IF
 
 # index
 - [x] criar metodo de navegação (que leia a URL)
 - [ ] estilizar com css
 - [ ] animação?
 
-- ## menu -> Opçoes 
+- ## menu -> Opçoes
 - [ ] definir tempo
 - É de responsabilidade da pagina INDEX.js:
 - [ ] Sair com fade out
-- [x] exibir tela de carregamento  
+- [x] exibir tela de carregamento
 - [x] carregar prova.js
-- [x] evitar recarregar  
+- [x] evitar recarregar
 
-- ## Prova 
+- ## Prova
 - [ ] receber tempo
 - [ ] receber imagens
 - É de responsabilidade da pagina prova.js:
-- [x] carregar o ajax 
-- [x] limpar a tela 
+- [x] carregar o ajax
+- [x] limpar a tela
 
 - ### iframe com tempo
 - [ ] avisos
