@@ -2,7 +2,7 @@ window.onload = function(){
     render = document.getElementById("root");
     render.innerHTML = '\
             <div id="index">\
-    <img height="50%" src="logo.png"><br><br>\
+    <img src="logo.png"><br><br>\
     selecione o ano da prova<br><br>\
     <select id="select">\
        <option value="2019">2019</option>\
