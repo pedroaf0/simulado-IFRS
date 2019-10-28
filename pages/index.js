@@ -17,11 +17,24 @@ window.onload = function(){
 
 
 function iniciar(){
-    var script = document.createElement('script');
-    script.src = "pages/prova.js";
-    document.body.appendChild(script);
-    var select = document.getElementById("select");
-  //  prova(select.options[select.selectedIndex].value)
-    console.log(select.options[select.selectedIndex].value + "a");
-    render.innerHTML = '';
-}
+  var select = document.getElementById("select");
+  console.log(select.options[select.selectedIndex].value + "a");
+  window.history.pushState('Object', '', '?prova='+select.options[select.selectedIndex].value);
+
+  render.innerHTML = '<img src="load.gif">';
+
+    var script1 = document.createElement('script');
+    script1.src = "pages/prova.js";
+    document.body.appendChild(script1);
+  script1.onload = function() {
+    var script2 = document.createElement('script');
+    script2.src = "jquery.min.js";
+    document.body.appendChild(script2);
+     script2.onload = function() {
+      console.log("loaded");
+      render.innerHTML = '';
+      prova(select.options[select.selectedIndex].value);
+  
+    }
+  }
+};
