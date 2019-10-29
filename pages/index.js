@@ -1,4 +1,16 @@
 window.onload = function(){
+  var url = window.location.href;
+  var ano = url.split("?");
+  console.log(ano[1]);
+  if (ano[1] == null){
+    render();
+  }else{
+    load_prova(ano[1]);
+  }
+
+}
+
+function render(){
     render = document.getElementById("root");
     render.innerHTML = '\
             <div id="index">\
@@ -14,27 +26,25 @@ window.onload = function(){
    </div>';
 }
 
+function load_prova(ano){
+  var script1 = document.createElement('script');
+    script1.src = "pages/prova.js";
+    document.body.appendChild(script1);
+
+  script1.onload = function(){
+    prova(ano); 
+  }
+}
 
 
 function iniciar(){
   var select = document.getElementById("select");
-  console.log(select.options[select.selectedIndex].value + "a");
-  window.history.pushState('Object', '', '?prova='+select.options[select.selectedIndex].value);
+  console.log(select.options[select.selectedIndex].value);
+  window.history.pushState('Object', '', '?'+select.options[select.selectedIndex].value);
+  var ano  = select.options[select.selectedIndex].value;
 
   render.innerHTML = '<img src="load.gif">';
-
-    var script1 = document.createElement('script');
-    script1.src = "pages/prova.js";
-    document.body.appendChild(script1);
-  script1.onload = function() {
-    var script2 = document.createElement('script');
-    script2.src = "jquery.min.js";
-    document.body.appendChild(script2);
-     script2.onload = function() {
-      console.log("loaded");
-      render.innerHTML = '';
-      prova(select.options[select.selectedIndex].value);
+      load_prova(ano);
+      
   
-    }
-  }
 };

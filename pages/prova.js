@@ -1,4 +1,12 @@
 function prova(ano){
+  var script2 = document.createElement('script');
+  script2.src = "jquery.min.js";
+  document.body.appendChild(script2);
+   script2.onload = function() {
+    console.log("loaded");
+    document.getElementById("root").innerHTML = '';
+
+
         $.getJSON('provas/'+ano+'/index.json', function(data) {
           
           for (i = 0; i < 6; i++) {
@@ -13,6 +21,7 @@ function prova(ano){
             document.getElementById(i).innerHTML += "<span id=\""+i+"\"><input type=\"radio\" name=\""+i+"\" id=\"E\">" +data.perguntas[i].E+"</span><br>";
           }
                       console.log(data);
-      }); 
+      });   
+    }
 }
       

@@ -4,16 +4,22 @@ o objetivo desse repositório é criar uma plataforma online que permita ao usu�
 - [x] add meta tags com imagem, descrição e titulo
 
 # index
-- [ ] criar metodo de navegação (que leia a URL)
+- [x] criar metodo de navegação (que leia a URL)
 - [ ] estilizar com css
 - [ ] animação?
 
 - ## menu -> Opçoes 
 - [ ] definir tempo
+- É de responsabilidade da pagina INDEX.js:
+- [ ] Sair com fade out e exibir tela de carregamento  
+- [x] carregar prova.js
 
-- ## Prova
+- ## Prova 
 - [ ] receber tempo
 - [ ] receber imagens
+- É de responsabilidade da pagina prova.js:
+- [x] carregar o ajax 
+- [x] limpar a tela 
 
 - ### iframe com tempo
 - [ ] avisos
