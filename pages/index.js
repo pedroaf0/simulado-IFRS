@@ -27,6 +27,9 @@ function render(){
 }
 
 function load_prova(ano){
+  document.body.innerHTML += '<div id="overlay"><img id="imgload" src="https://data.whicdn.com/images/265718366/original.gif"></div>';
+
+  document.getElementById("overlay").style.display = "block";
   var script1 = document.createElement('script');
     script1.src = "pages/prova.js";
     document.body.appendChild(script1);
@@ -47,4 +50,9 @@ function iniciar(){
       load_prova(ano);
       
   
-};
+}
+
+window.onbeforeunload = function()
+{
+      return "Você perdera suas respostas";
+}

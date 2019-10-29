@@ -11,8 +11,10 @@ o objetivo desse repositório é criar uma plataforma online que permita ao usu�
 - ## menu -> Opçoes 
 - [ ] definir tempo
 - É de responsabilidade da pagina INDEX.js:
-- [ ] Sair com fade out e exibir tela de carregamento  
+- [ ] Sair com fade out
+- [x] exibir tela de carregamento  
 - [x] carregar prova.js
+- [x] evitar recarregar  
 
 - ## Prova 
 - [ ] receber tempo

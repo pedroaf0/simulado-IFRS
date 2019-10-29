@@ -4,14 +4,18 @@ function prova(ano){
   document.body.appendChild(script2);
    script2.onload = function() {
     console.log("loaded");
+    
     document.getElementById("root").innerHTML = '';
 
 
         $.getJSON('provas/'+ano+'/index.json', function(data) {
           
-          for (i = 0; i < 6; i++) {
+          for (i = 0; i < 4; i++) {
             document.getElementById("root").innerHTML += '<div id="'+i+'"></div>';
       
+          
+            
+
             document.getElementById(i).innerHTML += data.perguntas[i].pergunta+"<br>";
       
             document.getElementById(i).innerHTML += "<span id=\""+i+"\"><input type=\"radio\" name=\""+i+"\" id=\"A\">" +data.perguntas[i].A+"</span><br>";
@@ -23,5 +27,7 @@ function prova(ano){
                       console.log(data);
       });   
     }
+
+    document.getElementById("overlay").style.display = "none";
 }
       
