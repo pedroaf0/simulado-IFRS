@@ -1,5 +1,5 @@
 # simulado-IFRS 
-esse projeto foi transferido para [portal-do-candidato](github.com/pedroaf0/portal-do-candidato) onde será feito com react js
+esse projeto foi transferido para [portal-do-candidato](https://github.com/pedroaf0/portal-do-candidato) onde será feito com react js
 
 o objetivo desse repositório era criar uma plataforma online que permita ao usuário fazer um simulado da prova do processo seletivo do IFRS. Utilizando uma pagina 100% estática (que não precise de processamento por parte do servidor) as perguntas são armazenadas em arquivos json
 - [x] criar a base da aplicação html
